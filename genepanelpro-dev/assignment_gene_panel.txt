@@ -1,0 +1,52 @@
+gene-panel-assignment:
+
+start: 21-june-2021 (monday)
+end: 25-june-2021 (friday)
+
+lookup: https://gedevbucket.s3.amazonaws.com/tasks2021/Gene_Panel_v10.2.tsv
+Refer: https://mygene.info/ for gene info API
+Refer: https://genepanel.iobio.io/
+
+I. Gene-panels based report:
+	-> Input:
+		-> Drop down to list the gene-panels. User can select one or more gene-panels
+
+	-> lookup:
+		-> Take panel_name for gene-panel-names
+		-> Take unique genes in primary_gene, and secondary_gene for genes
+
+	-> Output:
+		-> Table to list the unique genes in each selected gene-panel (Table: Sno, gene-panel, genes)
+		-> plot venn diagram
+		-> By clicking any gene, pop-up gene-info & SVG of the chromosome & mark the gene's location in the chromosome (use gene-info API to fetch the data for the pop-up). Refer: https://genepanel.iobio.io/
+
+
+II. Gene based report:
+	-> Input:
+		-> one or more genes as text
+
+	-> lookup:
+		-> Take panel_name for gene-panel-names
+		-> Take unique genes in primary_gene, and secondary_gene for genes
+
+	-> Output:
+		-> Table to list the gene-panel & hit genes (Table: Sno, gene-panel, genes)
+		-> plot venn diagram
+		-> By clicking any gene, pop-up gene-info & SVG of the chromosome & mark the gene's location in the chromosome (use gene-info API to fetch the data for the pop-up). Refer: https://genepanel.iobio.io/
+
+
+
+-> What to do?
+1. Prepare the google document with following details & share to the team.
+	- title of the assignment
+	- team members
+	- overview
+	- requirements
+	- high level design (HLD)
+	- low level design (LLD)
+
+2. Explain the document to the team (including Vivek, Ameen, Vadivu, and Ravi). After confirmation, start developing the application.
+
+3. Do all tests (prepare test-cases)
+
+4. Final demo
